@@ -1,0 +1,56 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# Maven specific files and directories
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Eclipse specific files
+.project
+.classpath
+.settings/
+# Eclipse working sets
+.metadata/
+
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+*.iws
+out/
+
+# VS Code specific files
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Generated files
+gen/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Unit test reports
+test-output/
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.dll
+*.exe
