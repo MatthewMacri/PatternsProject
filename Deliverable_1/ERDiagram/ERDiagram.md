@@ -41,3 +41,4 @@ erDiagram
     
     STUDENT ||--o{ REGISTERED : "registers"
     COURSE ||--o{ REGISTERED : "contains"
+```
