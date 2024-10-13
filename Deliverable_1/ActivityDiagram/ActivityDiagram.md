@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
 A["Student or Admin Login"] --> B["Student Accesses Registration System"]
 A --> K["Admin Accesses System"]
