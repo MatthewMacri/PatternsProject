@@ -39,6 +39,5 @@ erDiagram
         PK, FK2 COURSE_NUMBER
     }
     
-    ADMIN ||--o{ STUDENT : "manages"
     STUDENT ||--o{ REGISTERED : "registers"
     COURSE ||--o{ REGISTERED : "contains"
