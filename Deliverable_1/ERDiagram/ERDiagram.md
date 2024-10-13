@@ -1,42 +1,42 @@
 ```mermaid
 erDiagram
     ADMIN {
-        string ADMIN_ID
-        string FIRSTNAME
-        string LASTNAME
-        string PHONENUMBER
-        string EMAILADRESS
-        string PASSWORD
-        string SECURITYQUESTION
-        string SECURITYANSWER
+        PK ADMIN_ID
+         FIRSTNAME
+         LASTNAME
+         PHONENUMBER
+         EMAILADRESS
+         PASSWORD
+         SECURITYQUESTION
+         SECURITYANSWER
     }
     
     STUDENT {
-        string STUDENT_ID
-        string FIRSTNAME
-        string LASTNAME
-        string PHONENUMBER
-        string EMAILADRESS
-        string PASSWORD
-        int NUMBERCOURSESREGISTERED
-        bool ISFULLTIME
+        PK STUDENT_ID
+         FIRSTNAME
+         LASTNAME
+         PHONENUMBER
+         EMAILADRESS
+         PASSWORD
+         NUMBERCOURSESREGISTERED
+         ISFULLTIME
     }
     
     COURSE {
-        string COURSE_NUMBER
-        string COURSETYPE
-        string COURSESECTION
-        int COURSECAPACITY
-        int CURRENTENROLLEMENTNUMBER
-        float COURSECREDITS
-        string COURSETIME
-        string ONLINECOURSELINK
-        string COURSEROOMNUMBER
+        PK COURSE_NUMBER
+         COURSETYPE
+         COURSESECTION
+         COURSECAPACITY
+         CURRENTENROLLEMENTNUMBER
+         COURSECREDITS
+         COURSETIME
+         ONLINECOURSELINK
+         COURSEROOMNUMBER
     }
     
     REGISTERED {
-        string STUDENT_ID
-        string COURSE_NUMBER
+        PK, FK1 STUDENT_ID
+        PK, FK2 COURSE_NUMBER
     }
     
     ADMIN ||--o{ STUDENT : "manages"
