@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
 A["Student or Admin Login"] --> B["Student Accesses Registration System"]
 A --> K["Admin Accesses System"]
@@ -18,3 +19,4 @@ K --> M["Create/Remove Admins or Students"]
 M --> N["Add/Update/Remove Courses"]
 M --> O["Manage Student Enrollments"]
 N --> P["Generate Schedule"]
+```mermaid
