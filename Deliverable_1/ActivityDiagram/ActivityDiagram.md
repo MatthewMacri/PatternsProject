@@ -1,20 +1,20 @@
-```mermaid
 flowchart TD
-A["Student Accesses Registration System"] --> B["Register for Courses"]
-A --> C["View Course Schedule"]
-A --> D["Drop Courses"]
-B --> E["Check Course Availability"]
-E --> F["Course Available?"]
-F -- Yes --> G["Register Student for Course"]
-F -- No --> H["Display Error: Course Full"]
-G --> I["Confirm Registration"]
-D --> J["Confirm Course Drop"]
+A["Student or Admin Login"] --> B["Student Accesses Registration System"]
+A --> K["Admin Accesses System"]
 
-subgraph Admin Actions Part 1
-    K["Admin Accesses System"] --> L["Add/Update/Remove Courses"]
-end
+%% Student actions
+B --> C["Register for Courses"]
+B --> D["View Course Schedule"]
+B --> E["Drop Courses"]
+C --> F["Check Course Availability"]
+F --> G["Course Available?"]
+G -- Yes --> H["Register Student for Course"]
+G -- No --> I["Display Error: Course Full"]
+H --> J["Confirm Registration"]
+E --> L["Confirm Course Drop"]
 
-subgraph Admin Actions Part 2
-    L --> M["Manage Student Enrollments"]
-    M --> N["Generate Reports"]
-end
+%% Admin actions
+K --> M["Create/Remove Admins or Students"]
+M --> N["Add/Update/Remove Courses"]
+M --> O["Manage Student Enrollments"]
+N --> P["Generate Schedule"]
