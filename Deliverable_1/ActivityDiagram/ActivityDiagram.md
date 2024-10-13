@@ -19,4 +19,3 @@ K --> M["Create/Remove Admins or Students"]
 M --> N["Add/Update/Remove Courses"]
 M --> O["Manage Student Enrollments"]
 N --> P["Generate Schedule"]
-```mermaid
