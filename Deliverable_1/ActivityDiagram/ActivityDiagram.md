@@ -1,7 +1,8 @@
 ```mermaid
 flowchart TD
-A["Student or Admin Login"] --> B["Student Accesses Registration System"]
-A --> K["Admin Accesses System"]
+%% Login decision
+A["Student or Admin Login"] --> |Student| B["Student Accesses Registration System"]
+A --> |Admin| K["Admin Accesses System"]
 
 %% Student actions
 B --> C["Register for Courses"]
@@ -16,6 +17,6 @@ E --> L["Confirm Course Drop"]
 
 %% Admin actions
 K --> M["Create/Remove Admins or Students"]
-M --> N["Add/Update/Remove Courses"]
-M --> O["Manage Student Enrollments"]
+K --> N["Add/Update/Remove Courses"]
+K --> O["Manage Student Enrollments"]
 N --> P["Generate Schedule"]

@@ -8,7 +8,7 @@
 
 ## **Project Overview**
 
-The **School Registration System** is a Java-based application designed to simplify course management and registration for students and administrators. The system allows students to:
+The **School Registration System** is a Java-based application designed to simplify course management and registration for students, teachers, and administrators. The system allows students to:
 - Register for courses.
 - View their course schedules.
 - Drop courses.
@@ -17,6 +17,9 @@ Administrators can:
 - Add, update, or remove courses.
 - Manage student enrollments.
 - Generate reports on student and course data.
+
+Teachers can:
+- View course details, including student lists and schedules.
 
 This project serves as a practical implementation of key object-oriented programming concepts, data structures, and software design patterns, aligning with the **Programming Patterns** course (420-301-VA) at Vanier College.
 
@@ -34,22 +37,26 @@ This project serves as a practical implementation of key object-oriented program
 - View and manage student enrollment.
 - Generate reports on course enrollments and student information.
 
-### **3. Data Structures**
+### **3. Teacher Portal**
+- View course details such as enrolled students and course schedules.
+- Access class rosters and attendance records.
+
+### **4. Data Structures**
 - **ArrayList** and **LinkedList** for course storage and management.
 - **Queue** for handling student registration requests.
 - Use of **Comparable** and **Comparator** interfaces for sorting courses by name, schedule, or capacity.
 
-### **4. Stream Processing & Lambda Expressions**
+### **5. Stream Processing & Lambda Expressions**
 - Efficient filtering of course data using Java Streams.
 - Lambda expressions for simplified data processing and comparisons.
 
-### **5. Generic Classes**
+### **6. Generic Classes**
 - Implementation of generic data structures to handle multiple types of data, ensuring flexibility and scalability.
 
-### **6. Unit Testing**
+### **7. Unit Testing**
 - Comprehensive unit tests using JUnit to ensure functionality and correctness of all core components, such as student registration, course management, and data manipulation.
 
-### **7. External Libraries**
+### **8. External Libraries**
 - Maven for dependency management and project build automation.
 - Integration of external libraries for validation and input handling.
 
