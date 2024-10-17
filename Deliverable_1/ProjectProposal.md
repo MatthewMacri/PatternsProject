@@ -46,4 +46,3 @@ This project will make use of basic data structures such as `ArrayList`, `Linked
 
 ## Expected Outcome
 A functional **School Registration System** using basic data structures, unit testing, and stream processing, with a clean and maintainable design. This project will demonstrate a strong understanding of key course concepts such as data structures, unit testing, and stream processing.
-
