@@ -42,10 +42,12 @@ The project will use data structures such as `ArrayList`, `LinkedList`, `Stack`,
    - Use **Lambda expressions** and **stream processing** to filter courses by time, professor, or level.
 
 ## Technologies
-- **Java** for core logic.
-- **JUnit** for unit testing.
-- **Maven** for dependency management.
-- **Lambda expressions** for simplifying code.
+- **Java**: Core programming language.
+- **JUnit**: For unit testing and quality assurance.
+- **Maven**: For dependency management and building the project.
+- **Java Streams & Lambda Expressions**: To simplify code and make data operations more efficient.
+- **JDBC (optional)**: For database connectivity (SQLite/Oracle) if required for advanced features.
+- **Git**: Version control for code collaboration and management.
 
 ## Timeframe
 - **Week 1-2**: Implement core features (student registration, course management).
